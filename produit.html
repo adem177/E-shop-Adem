@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiche produit — E-Shop Adem</title>
+  <meta name="description" content="Fiche détaillée du produit : caractéristiques, avis clients et ajout au panier.">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>try{var t=localStorage.getItem("eshop_theme");if(t)document.documentElement.dataset.theme=JSON.parse(t);}catch(e){}</script>
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-logo"><img src="images/logo.png" alt="Logo E-Shop Adem"></span>
+        <span class="brand-name">E-Shop <span class="accent">Adem</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a class="active" href="produits.html">Produits</a></li>
+        <li><a href="offre.html">Offres</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Changer de thème"></button>
+        <button class="icon-btn" id="cartOpen" aria-label="Ouvrir le panier">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.6"/><circle cx="19" cy="21" r="1.6"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <a href="inscription.html" class="btn btn-primary btn-sm">S’inscrire</a>
+        <button class="icon-btn burger" id="burger" data-icon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>' aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Le contenu est généré par main.js (catalogue + ?p=slug) -->
+  <main id="productRoot" style="padding-top:34px">
+    <div class="container center" style="padding:60px 0;color:var(--muted)">Chargement du produit…</div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand">
+            <span class="brand-logo"><img src="images/logo.png" alt="Logo"></span>
+            <span class="brand-name">E-Shop <span class="accent">Adem</span></span>
+          </a>
+          <p>Votre boutique tech de confiance : smartphones, laptops, consoles et accessoires, livrés partout en Tunisie.</p>
+          <div class="socials" style="margin-top:18px">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.1 8.1L23.3 22h-6.6l-5.2-6.8L5.6 22H2.4l7.6-8.7L1 2h6.8l4.7 6.2L18.9 2zm-1.1 18h1.8L7.3 3.9H5.4L17.8 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>À propos</h4>
+          <ul>
+            <li><a href="#">Notre histoire</a></li>
+            <li><a href="#">Localisation</a></li>
+            <li><a href="#">Horaires</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="compte.html">Mon compte</a></li>
+            <li><a href="produits.html">Panier</a></li>
+            <li><a href="#">Suivi de commande</a></li>
+            <li><a href="#">Garantie &amp; retours</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Restez informé</h4>
+          <p>Les nouveautés et offres exclusives, une fois par semaine.</p>
+          <form class="newsletter" id="newsletterForm">
+            <input type="email" placeholder="Votre e-mail" aria-label="Votre e-mail" required>
+            <button class="btn btn-primary btn-sm" type="submit">OK</button>
+          </form>
+          <ul style="margin-top:18px">
+            <li><a href="produits.html?cat=smartphones">Smartphones</a></li>
+            <li><a href="produits.html?cat=pc">PC &amp; Mac</a></li>
+            <li><a href="produits.html?cat=consoles">Consoles</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> E-Shop Adem — Tous droits réservés.</span>
+        <span>Projet HTML · CSS · JavaScript — Adem Dridi</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

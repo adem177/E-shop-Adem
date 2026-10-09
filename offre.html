@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offres spéciales — E-Shop Adem</title>
+  <meta name="description" content="Les offres spéciales du mois chez E-Shop Adem : réductions, stock limité et compte à rebours.">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>try{var t=localStorage.getItem("eshop_theme");if(t)document.documentElement.dataset.theme=JSON.parse(t);}catch(e){}</script>
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-logo"><img src="images/logo.png" alt="Logo E-Shop Adem"></span>
+        <span class="brand-name">E-Shop <span class="accent">Adem</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a class="active" href="offre.html">Offres</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Changer de thème"></button>
+        <button class="icon-btn" id="cartOpen" aria-label="Ouvrir le panier">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.6"/><circle cx="19" cy="21" r="1.6"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <a href="inscription.html" class="btn btn-primary btn-sm">S’inscrire</a>
+        <button class="icon-btn burger" id="burger" data-icon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>' aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= EN-TÊTE + COMPTE À REBOURS ================= -->
+  <header class="page-head">
+    <div class="container" style="text-align:center">
+      <span class="eyebrow">⏳ Offres limitées</span>
+      <h1>Offres <span class="grad-text">spéciales</span> du mois</h1>
+      <p style="margin-inline:auto">Des réductions surprises sur une sélection de laptops, smartphones et consoles — jusqu’à la fin du mois, dans la limite des stocks disponibles.</p>
+
+      <div class="countdown reveal" id="countdown">
+        <div class="cd-box"><div class="v" id="cdDays">00</div><div class="l">Jours</div></div>
+        <div class="cd-box"><div class="v" id="cdHours">00</div><div class="l">Heures</div></div>
+        <div class="cd-box"><div class="v" id="cdMin">00</div><div class="l">Minutes</div></div>
+        <div class="cd-box"><div class="v" id="cdSec">00</div><div class="l">Secondes</div></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= BONS PLANS ================= -->
+  <section class="section" style="padding-top:44px">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Stock limité</span>
+        <h2 class="section-title">Les <span class="grad-text">bons plans</span> de la semaine</h2>
+        <p class="section-sub">Nos meilleures réductions, renouvelées chaque lundi.</p>
+      </div>
+
+      <!-- Deal 1 -->
+      <div class="deal-card reveal" style="margin-bottom:20px">
+        <div class="deal-media">
+          <span class="deal-off">-8 %</span>
+          <img src="images/samsung.jpg" alt="Samsung Galaxy S24 Ultra">
+        </div>
+        <div class="deal-body">
+          <span class="pc-cat">Smartphones</span>
+          <h3>Samsung Galaxy S24 Ultra</h3>
+          <p>Titanium, 200 MP et IA intégrée — le flagship Android de l’année.</p>
+          <div class="pc-price"><span class="now">5 999 DT</span><span class="old">6 499 DT</span></div>
+          <div class="stock"><i style="width:24%"></i></div>
+          <div class="stock-lbl">Plus que 6 unités à ce prix</div>
+          <div class="deal-actions">
+            <button class="btn btn-primary" data-add-cart="samsung" data-name="Samsung Galaxy S24 Ultra" data-price="5999" data-img="images/samsung.jpg">Ajouter au panier</button>
+            <a class="btn btn-ghost" href="produit.html?p=samsung">Voir la fiche</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deal 2 -->
+      <div class="deal-card reveal" style="margin-bottom:20px">
+        <div class="deal-media">
+          <span class="deal-off">-7 %</span>
+          <img src="images/pc_gamer.jpeg" alt="PC Gamer Ryzen + RTX">
+        </div>
+        <div class="deal-body">
+          <span class="pc-cat">PC &amp; Mac</span>
+          <h3>PC Gamer Ryzen + RTX</h3>
+          <p>Ryzen 5, GeForce RTX et SSD 1 To — livré assemblé et testé.</p>
+          <div class="pc-price"><span class="now">2 499 DT</span><span class="old">2 699 DT</span></div>
+          <div class="stock"><i style="width:41%"></i></div>
+          <div class="stock-lbl">Plus que 10 unités à ce prix</div>
+          <div class="deal-actions">
+            <button class="btn btn-primary" data-add-cart="pcgamer" data-name="PC Gamer Ryzen + RTX" data-price="2499" data-img="images/pc_gamer.jpeg">Ajouter au panier</button>
+            <a class="btn btn-ghost" href="produit.html?p=pcgamer">Voir la fiche</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deal 3 -->
+      <div class="deal-card reveal" style="margin-bottom:20px">
+        <div class="deal-media">
+          <span class="deal-off">-8 %</span>
+          <img src="images/play.jpeg" alt="PlayStation 5 Slim">
+        </div>
+        <div class="deal-body">
+          <span class="pc-cat">Consoles</span>
+          <h3>PlayStation 5 Slim</h3>
+          <p>SSD 1 To, 4K 120 Hz et manette DualSense — offre valable jusqu’à épuisement.</p>
+          <div class="pc-price"><span class="now">2 199 DT</span><span class="old">2 399 DT</span></div>
+          <div class="stock"><i style="width:33%"></i></div>
+          <div class="stock-lbl">Plus que 8 unités à ce prix</div>
+          <div class="deal-actions">
+            <button class="btn btn-primary" data-add-cart="ps5" data-name="PlayStation 5 Slim" data-price="2199" data-img="images/play.jpeg">Ajouter au panier</button>
+            <a class="btn btn-ghost" href="produit.html?p=ps5">Voir la fiche</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deal 4 -->
+      <div class="deal-card reveal">
+        <div class="deal-media">
+          <span class="deal-off">-13 %</span>
+          <img src="images/redmi.jpg" alt="Redmi Note 13 Pro">
+        </div>
+        <div class="deal-body">
+          <span class="pc-cat">Smartphones</span>
+          <h3>Redmi Note 13 Pro</h3>
+          <p>Caméra 200 MP, écran AMOLED 120 Hz et charge rapide 67 W.</p>
+          <div class="pc-price"><span class="now">1 299 DT</span><span class="old">1 499 DT</span></div>
+          <div class="stock"><i style="width:57%"></i></div>
+          <div class="stock-lbl">Plus que 14 unités à ce prix</div>
+          <div class="deal-actions">
+            <button class="btn btn-primary" data-add-cart="redmi" data-name="Redmi Note 13 Pro" data-price="1299" data-img="images/redmi.jpg">Ajouter au panier</button>
+            <a class="btn btn-ghost" href="produit.html?p=redmi">Voir la fiche</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VITRINE PROMOS ================= -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">À la une</span>
+        <h2 class="section-title">Nos <span class="grad-text">promotions</span> du moment</h2>
+        <p class="section-sub">Des offres partenaires renouvelées chaque semaine — cliquez pour découvrir la sélection complète.</p>
+      </div>
+
+      <div class="strip">
+        <a class="strip-card reveal" href="produits.html">
+          <img src="images/ban.webp" alt="Promotion du moment">
+          <span class="ov"><span>Offre spéciale</span><span>Voir les détails →</span></span>
+        </a>
+        <a class="strip-card reveal" data-delay="1" href="produits.html">
+          <img src="images/lave.webp" alt="Promotion du moment">
+          <span class="ov"><span>Offre spéciale</span><span>Voir les détails →</span></span>
+        </a>
+        <a class="strip-card reveal" data-delay="2" href="produits.html">
+          <img src="images/slid.webp" alt="Promotion du moment">
+          <span class="ov"><span>Offre spéciale</span><span>Voir les détails →</span></span>
+        </a>
+        <a class="strip-card reveal" href="produits.html">
+          <img src="images/machine.webp" alt="Promotion du moment">
+          <span class="ov"><span>Offre spéciale</span><span>Voir les détails →</span></span>
+        </a>
+        <a class="strip-card reveal" data-delay="1" href="produits.html">
+          <img src="images/prd.jpg" alt="Promotion du moment">
+          <span class="ov"><span>Offre spéciale</span><span>Voir les détails →</span></span>
+        </a>
+        <a class="strip-card reveal" data-delay="2" href="produits.html">
+          <img src="images/kit.webp" alt="Promotion du moment">
+          <span class="ov"><span>Offre spéciale</span><span>Voir les détails →</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta reveal">
+        <div>
+          <h2>Un doute avant d’acheter ?</h2>
+          <p>Notre équipe vous conseille gratuitement par téléphone ou WhatsApp, 7 j/7 de 9 h à 20 h.</p>
+        </div>
+        <a href="#contact" class="btn">Nous contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand">
+            <span class="brand-logo"><img src="images/logo.png" alt="Logo"></span>
+            <span class="brand-name">E-Shop <span class="accent">Adem</span></span>
+          </a>
+          <p>Votre boutique tech de confiance : smartphones, laptops, consoles et accessoires, livrés partout en Tunisie.</p>
+          <div class="socials" style="margin-top:18px">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.1 8.1L23.3 22h-6.6l-5.2-6.8L5.6 22H2.4l7.6-8.7L1 2h6.8l4.7 6.2L18.9 2zm-1.1 18h1.8L7.3 3.9H5.4L17.8 20z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>À propos</h4>
+          <ul>
+            <li><a href="#">Notre histoire</a></li>
+            <li><a href="#">Localisation</a></li>
+            <li><a href="#">Horaires</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="compte.html">Mon compte</a></li>
+            <li><a href="produits.html">Panier</a></li>
+            <li><a href="#">Suivi de commande</a></li>
+            <li><a href="#">Garantie &amp; retours</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Restez informé</h4>
+          <p>Les nouveautés et offres exclusives, une fois par semaine.</p>
+          <form class="newsletter" id="newsletterForm">
+            <input type="email" placeholder="Votre e-mail" aria-label="Votre e-mail" required>
+            <button class="btn btn-primary btn-sm" type="submit">OK</button>
+          </form>
+          <ul style="margin-top:18px">
+            <li><a href="produits.html?cat=smartphones">Smartphones</a></li>
+            <li><a href="produits.html?cat=pc">PC &amp; Mac</a></li>
+            <li><a href="produits.html?cat=consoles">Consoles</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> E-Shop Adem — Tous droits réservés.</span>
+        <span>Projet HTML · CSS · JavaScript — Adem Dridi</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

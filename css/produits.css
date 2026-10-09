@@ -1,0 +1,46 @@
+/* =========================================================
+   E-SHOP ADEM — produits.css
+   Styles propres à la page catalogue (produits.html)
+   ========================================================= */
+
+/* Bandeau livraison / code promo */
+.shop-banner{
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  background:linear-gradient(120deg,rgba(47,125,251,.16),rgba(76,194,255,.10));
+  border:1px solid rgba(76,194,255,.32);
+  border-radius:var(--r-lg);
+  padding:16px 22px;margin-bottom:28px;
+}
+.shop-banner .sb-ic{
+  width:44px;height:44px;flex:none;border-radius:13px;display:grid;place-items:center;
+  background:rgba(47,125,251,.2);color:var(--primary-2);
+}
+.shop-banner .sb-ic svg{width:22px;height:22px}
+.shop-banner p{flex:1;min-width:220px;font-size:.92rem;color:var(--muted)}
+.shop-banner b{color:var(--text)}
+.shop-banner .sb-code{
+  font-weight:700;font-size:.85rem;letter-spacing:.06em;color:#fff;
+  background:var(--grad);padding:8px 16px;border-radius:999px;
+  box-shadow:0 10px 24px rgba(47,125,251,.35);
+}
+
+/* Encart d'aide de la sidebar */
+.side-help{
+  background:var(--surface-2);border:1px solid var(--line);
+  border-radius:var(--r-md);padding:16px;text-align:center;
+}
+.side-help b{font-size:.9rem}
+.side-help p{font-size:.82rem;color:var(--muted);margin:6px 0 13px}
+
+/* Le bouton "réinitialiser" du état vide */
+.no-results .btn{cursor:pointer}
+
+/* Grille plus dense dès que la largeur le permet */
+@media (min-width:1200px){
+  .shop-layout .products-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:640px){
+  .shop-layout .products-grid{grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+  .toolbar{padding:12px}
+  .toolbar-right{width:100%;justify-content:space-between}
+}

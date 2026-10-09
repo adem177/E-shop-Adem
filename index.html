@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Shop Adem — Laptops, smartphones & consoles au meilleur prix</title>
+  <meta name="description" content="E-Shop Adem : boutique en ligne de laptops, smartphones, consoles et accessoires. Livraison gratuite, garantie 2 ans, paiement en 3x.">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>try{var t=localStorage.getItem("eshop_theme");if(t)document.documentElement.dataset.theme=JSON.parse(t);}catch(e){}</script>
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-logo"><img src="images/logo.png" alt="Logo E-Shop Adem"></span>
+        <span class="brand-name">E-Shop <span class="accent">Adem</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="offre.html">Offres</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Changer de thème"></button>
+        <button class="icon-btn" id="cartOpen" aria-label="Ouvrir le panier">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.6"/><circle cx="19" cy="21" r="1.6"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <a href="inscription.html" class="btn btn-primary btn-sm">S’inscrire</a>
+        <button class="icon-btn burger" id="burger" data-icon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>' aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <div class="hero-bg">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="grid-lines"></span>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">🔥 Offres spéciales du mois</span>
+        <h1>Toute la tech,<br><span class="grad-text">au meilleur prix</span></h1>
+        <p class="lead">Laptops, iPhone, consoles et accessoires sélectionnés avec soin — livraison gratuite en 24‑48 h et garantie 2 ans sur tous nos produits.</p>
+
+        <div class="hero-cta">
+          <a href="produits.html" class="btn btn-primary">
+            Voir les produits
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="offre.html" class="btn btn-ghost">Profitez maintenant</a>
+        </div>
+
+        <ul class="hero-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Livraison gratuite</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Paiement en 3×</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Garantie 2 ans</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal" data-delay="2">
+        <figure class="hero-card c1">
+          <img src="images/pc_bureau.jpeg" alt="PC de bureau">
+          <figcaption>PC Bureau <b>à partir de 899 DT</b></figcaption>
+        </figure>
+        <figure class="hero-card c2">
+          <img src="images/iphone.png" alt="iPhone">
+          <figcaption>iPhone 15 Pro Max <b>4 899 DT</b></figcaption>
+        </figure>
+        <figure class="hero-card c3">
+          <img src="images/play.jpeg" alt="PlayStation 5">
+          <figcaption>PS5 Slim <b>2 199 DT</b></figcaption>
+        </figure>
+        <span class="hero-chip chip1"><span class="dot"></span> Stock disponible</span>
+        <span class="hero-chip chip2"><span class="dot"></span> -20 % cette semaine</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= STATS ================= -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid reveal">
+        <div class="stat">
+          <div class="stat-num" data-count="1250" data-suffix="+">0</div>
+          <div class="stat-label">Produits disponibles</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="8500" data-suffix="+">0</div>
+          <div class="stat-label">Clients satisfaits</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="4.8" data-dec="1" data-suffix="/5">0</div>
+          <div class="stat-label">Note moyenne</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="48" data-suffix=" h">0</div>
+          <div class="stat-label">Livraison maximale</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CATÉGORIES ================= -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Nos rayons</span>
+        <h2 class="section-title">Explorez par <span class="grad-text">catégorie</span></h2>
+        <p class="section-sub">Du smartphone au PC gamer, trouvez la technologie qui vous ressemble.</p>
+      </div>
+
+      <div class="cat-grid">
+        <a class="cat-card reveal" href="produits.html?cat=smartphones">
+          <div class="thumb"><img src="images/iphone.png" alt="Smartphones"></div>
+          <h3>Smartphones</h3><span>3 produits</span>
+          <span class="go">Découvrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a class="cat-card reveal" data-delay="1" href="produits.html?cat=pc">
+          <div class="thumb"><img src="images/mac.jpeg" alt="PC & Mac"></div>
+          <h3>PC & Mac</h3><span>3 produits</span>
+          <span class="go">Découvrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a class="cat-card reveal" data-delay="2" href="produits.html?cat=consoles">
+          <div class="thumb"><img src="images/play.jpeg" alt="Consoles"></div>
+          <h3>Consoles</h3><span>2 produits</span>
+          <span class="go">Découvrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a class="cat-card reveal" href="produits.html?cat=tv">
+          <div class="thumb"><img src="images/tv.jpg" alt="Téléviseurs"></div>
+          <h3>Téléviseurs</h3><span>1 produit</span>
+          <span class="go">Découvrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a class="cat-card reveal" data-delay="1" href="produits.html?cat=accessoires">
+          <div class="thumb"><img src="images/watch.jpeg" alt="Accessoires"></div>
+          <h3>Accessoires</h3><span>3 produits</span>
+          <span class="go">Découvrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a class="cat-card reveal" data-delay="2" href="offre.html">
+          <div class="thumb"><img src="images/prd.jpg" alt="Bons plans"></div>
+          <h3>Bons plans</h3><span>Offres limitées</span>
+          <span class="go">Voir les offres
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MEILLEURES VENTES ================= -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Best‑sellers</span>
+        <h2 class="section-title">Les plus <span class="grad-text">demandés</span></h2>
+        <p class="section-sub">La sélection de nos clients cette semaine — stock limité.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- 1 -->
+        <article class="product-card reveal" data-name="Samsung Galaxy S24 Ultra" data-cat="smartphones" data-price="5999" data-promo="1">
+          <div class="pc-media">
+            <span class="pc-badge">-8 %</span>
+            <button class="pc-wish" type="button" aria-label="Ajouter aux favoris"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <a class="pc-link" href="produit.html?p=samsung" aria-label="Voir Samsung Galaxy S24 Ultra"></a>
+            <img src="images/samsung.jpg" alt="Samsung Galaxy S24 Ultra">
+          </div>
+          <div class="pc-body">
+            <span class="pc-cat">Smartphones</span>
+            <h3 class="pc-title">Samsung Galaxy S24 Ultra</h3>
+            <div class="pc-rating"><span class="stars">★★★★★</span> 4.9 (128 avis)</div>
+            <div class="pc-price"><span class="now">5 999 DT</span><span class="old">6 499 DT</span></div>
+            <div class="pc-actions">
+              <button class="btn btn-primary" data-add-cart="samsung" data-name="Samsung Galaxy S24 Ultra" data-price="5999" data-img="images/samsung.jpg">Ajouter</button>
+              <a class="btn btn-ghost" href="produit.html?p=samsung">Détails</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="product-card reveal" data-delay="1" data-name="iPhone 15 Pro Max" data-cat="smartphones" data-price="4899" data-promo="1">
+          <div class="pc-media">
+            <span class="pc-badge">-6 %</span>
+            <button class="pc-wish" type="button" aria-label="Ajouter aux favoris"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <a class="pc-link" href="produit.html?p=iphone15" aria-label="Voir iPhone 15 Pro Max"></a>
+            <img src="images/apple.png" alt="iPhone 15 Pro Max">
+          </div>
+          <div class="pc-body">
+            <span class="pc-cat">Smartphones</span>
+            <h3 class="pc-title">iPhone 15 Pro Max</h3>
+            <div class="pc-rating"><span class="stars">★★★★★</span> 4.8 (96 avis)</div>
+            <div class="pc-price"><span class="now">4 899 DT</span><span class="old">5 199 DT</span></div>
+            <div class="pc-actions">
+              <button class="btn btn-primary" data-add-cart="iphone15" data-name="iPhone 15 Pro Max" data-price="4899" data-img="images/apple.png">Ajouter</button>
+              <a class="btn btn-ghost" href="produit.html?p=iphone15">Détails</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="product-card reveal" data-delay="2" data-name="PC Gamer Ryzen + RTX" data-cat="pc" data-price="2499" data-promo="1">
+          <div class="pc-media">
+            <span class="pc-badge">-7 %</span>
+            <button class="pc-wish" type="button" aria-label="Ajouter aux favoris"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <a class="pc-link" href="produit.html?p=pcgamer" aria-label="Voir PC Gamer"></a>
+            <img src="images/pc_gamer.jpeg" alt="PC Gamer Ryzen + RTX">
+          </div>
+          <div class="pc-body">
+            <span class="pc-cat">PC &amp; Mac</span>
+            <h3 class="pc-title">PC Gamer Ryzen + RTX</h3>
+            <div class="pc-rating"><span class="stars">★★★★★</span> 4.9 (74 avis)</div>
+            <div class="pc-price"><span class="now">2 499 DT</span><span class="old">2 699 DT</span></div>
+            <div class="pc-actions">
+              <button class="btn btn-primary" data-add-cart="pcgamer" data-name="PC Gamer Ryzen + RTX" data-price="2499" data-img="images/pc_gamer.jpeg">Ajouter</button>
+              <a class="btn btn-ghost" href="produit.html?p=pcgamer">Détails</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="product-card reveal" data-delay="3" data-name="PlayStation 5 Slim" data-cat="consoles" data-price="2199" data-promo="1">
+          <div class="pc-media">
+            <span class="pc-badge">-8 %</span>
+            <button class="pc-wish" type="button" aria-label="Ajouter aux favoris"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <a class="pc-link" href="produit.html?p=ps5" aria-label="Voir PlayStation 5 Slim"></a>
+            <img src="images/play.jpeg" alt="PlayStation 5 Slim">
+          </div>
+          <div class="pc-body">
+            <span class="pc-cat">Consoles</span>
+            <h3 class="pc-title">PlayStation 5 Slim</h3>
+            <div class="pc-rating"><span class="stars">★★★★★</span> 4.9 (167 avis)</div>
+            <div class="pc-price"><span class="now">2 199 DT</span><span class="old">2 399 DT</span></div>
+            <div class="pc-actions">
+              <button class="btn btn-primary" data-add-cart="ps5" data-name="PlayStation 5 Slim" data-price="2199" data-img="images/play.jpeg">Ajouter</button>
+              <a class="btn btn-ghost" href="produit.html?p=ps5">Détails</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="center mt-4 reveal">
+        <a href="produits.html" class="btn btn-ghost">Voir tous les produits
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= POURQUOI NOUS ================= -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Pourquoi nous ?</span>
+        <h2 class="section-title">Une boutique <span class="grad-text">pensée pour vous</span></h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <h3>Livraison gratuite</h3>
+          <p>Partout en Tunisie en 24 à 48 h, avec suivi en temps réel de votre commande.</p>
+        </div>
+        <div class="feature reveal" data-delay="1">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Paiement sécurisé</h3>
+          <p>CIB, carte bancaire ou paiement à la livraison : vos données restent protégées.</p>
+        </div>
+        <div class="feature reveal" data-delay="2">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 18 0v5a2 2 0 0 1-2 2h-2v-6h4M3 17v-5h4v6H5a2 2 0 0 1-2-2z"/></svg></div>
+          <h3>Support 7j/7</h3>
+          <p>Une équipe disponible par téléphone, WhatsApp et e-mail pour vous accompagner.</p>
+        </div>
+        <div class="feature reveal" data-delay="3">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></div>
+          <h3>Retour sous 7 jours</h3>
+          <p>Vous changez d'avis ? Remboursement simple et rapide, sans questions inutiles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta reveal">
+        <div>
+          <h2>Offres spéciales du mois 🎉</h2>
+          <p>Jusqu'à <b>-30 %</b> sur une sélection de laptops, smartphones et consoles. Offre valable jusqu'à la fin du mois.</p>
+        </div>
+        <a href="offre.html" class="btn">Profiter des offres
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand">
+            <span class="brand-logo"><img src="images/logo.png" alt="Logo"></span>
+            <span class="brand-name">E-Shop <span class="accent">Adem</span></span>
+          </a>
+          <p>Votre boutique tech de confiance : smartphones, laptops, consoles et accessoires, livrés partout en Tunisie.</p>
+          <div class="socials" style="margin-top:18px">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.1 8.1L23.3 22h-6.6l-5.2-6.8L5.6 22H2.4l7.6-8.7L1 2h6.8l4.7 6.2L18.9 2zm-1.1 18h1.8L7.3 3.9H5.4L17.8 20z"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>À propos</h4>
+          <ul>
+            <li><a href="#">Notre histoire</a></li>
+            <li><a href="#">Localisation</a></li>
+            <li><a href="#">Horaires</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="compte.html">Mon compte</a></li>
+            <li><a href="produits.html">Panier</a></li>
+            <li><a href="#">Suivi de commande</a></li>
+            <li><a href="#">Garantie &amp; retours</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Restez informé</h4>
+          <p>Les nouveautés et offres exclusives, une fois par semaine.</p>
+          <form class="newsletter" id="newsletterForm">
+            <input type="email" placeholder="Votre e-mail" aria-label="Votre e-mail" required>
+            <button class="btn btn-primary btn-sm" type="submit">OK</button>
+          </form>
+          <ul style="margin-top:18px">
+            <li><a href="produits.html">PC &amp; Mac</a></li>
+            <li><a href="produits.html?cat=smartphones">Smartphones</a></li>
+            <li><a href="produits.html?cat=consoles">Consoles</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> E-Shop Adem — Tous droits réservés.</span>
+        <span>Projet HTML · CSS · JavaScript — Adem Dridi</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

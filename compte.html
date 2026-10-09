@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Se connecter — E-Shop Adem</title>
+  <meta name="description" content="Connectez-vous à votre compte E-Shop Adem pour suivre vos commandes et vos favoris.">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>try{var t=localStorage.getItem("eshop_theme");if(t)document.documentElement.dataset.theme=JSON.parse(t);}catch(e){}</script>
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-logo"><img src="images/logo.png" alt="Logo E-Shop Adem"></span>
+        <span class="brand-name">E-Shop <span class="accent">Adem</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="offre.html">Offres</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Changer de thème"></button>
+        <button class="icon-btn" id="cartOpen" aria-label="Ouvrir le panier">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.6"/><circle cx="19" cy="21" r="1.6"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <a href="inscription.html" class="btn btn-primary btn-sm">S’inscrire</a>
+        <button class="icon-btn burger" id="burger" data-icon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>' aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= CONNEXION ================= -->
+  <div class="auth">
+    <aside class="auth-side">
+      <span class="badge" style="background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);color:#fff;width:fit-content">E-Shop Adem</span>
+      <h2>Bon retour parmi nous 👋</h2>
+      <p>Connectez-vous pour retrouver votre panier, vos commandes et vos avis.</p>
+
+      <ul class="auth-points">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Vos favoris et votre panier vous attendent
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Suivi de commande en temps réel
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Paiement en 3× sans frais
+        </li>
+      </ul>
+
+      <div class="auth-art">
+        <img src="images/img.png" alt="Achetez en ligne">
+      </div>
+    </aside>
+
+    <div class="auth-main">
+      <div class="auth-card">
+        <div class="auth-box">
+          <h1>Se connecter</h1>
+          <p class="sub">Heureux de vous revoir — vos données sont en sécurité.</p>
+
+          <form data-form="login" novalidate>
+            <div class="field">
+              <label for="email">Adresse e-mail</label>
+              <input class="control" type="email" id="email" name="email" placeholder="adem@example.com" autocomplete="email">
+              <p class="err-msg"></p>
+            </div>
+
+            <div class="field">
+              <label for="password">Mot de passe</label>
+              <div class="pw-wrap">
+                <input class="control" type="password" id="password" name="password" placeholder="Votre mot de passe" autocomplete="current-password">
+                <button class="pw-toggle" type="button" aria-label="Afficher le mot de passe">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+              </div>
+              <p class="err-msg"></p>
+            </div>
+
+            <div class="form-row">
+              <label class="check"><input type="checkbox" checked> <span>Se souvenir de moi</span></label>
+              <a href="mdp.html">Mot de passe oublié ?</a>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Se connecter</button>
+
+            <p class="auth-alt">Pas encore de compte ? <a href="inscription.html">S’inscrire</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="contact" style="margin-top:0">
+    <div class="container">
+      <div class="footer-bottom" style="margin-top:0;padding-top:0;border-top:none">
+        <span>© <span data-year>2026</span> E-Shop Adem — Tous droits réservés.</span>
+        <span>Projet HTML · CSS · JavaScript — Adem Dridi</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
