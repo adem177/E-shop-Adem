@@ -46,7 +46,7 @@
     },
     iphone15: {
       name: "iPhone 15 Pro Max", cat: "Smartphones", price: 4899, old: 5199,
-      img: "images/apple.png", rating: 4.8, reviews: 96, badge: "-6%",
+      img: "images/iphone15.jpeg", rating: 4.8, reviews: 96, badge: "-6%",
       desc: "Le iPhone 15 Pro Max en titane, avec la puce A17 Pro pour des performances de jeu et une caméra téléobjectif 5x.",
       specs: ["Écran Super Retina XDR 6,7\" – ProMotion 120 Hz",
               "Puce A17 Pro – 256 Go – USB-C (USB 3)",
